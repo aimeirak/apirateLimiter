@@ -22,10 +22,15 @@ Install these two tools on your local machine
 
 Project installation
 •	clone the repo: git clone https://github.com/aimeirak/apirateLimiter.git
+
 •	switch to project directory : cd apiraleLimiter
+
 •	install all required dependencies: npm install
+
 •	start the server : npm run dev
+
 all create docker image by running this command
+
 docker build . –t rate-limiter-app
 
 install Redis image in docker by running this command
@@ -44,16 +49,29 @@ Example
 - 
 Request:
 http://localhost:3000/api/v1/notification
+
  Response: 
+ 
  {
+ 
     "status": 200,
+    
     "title": "notification",
+    
     "message": "This is the test",
+    
     "subscription": {
+    
         "remaining_sec": 4,
+        
         "remaining_per_month": 99
-    }
+        
+  
+  }
+
 }
+
+
 
 
 
