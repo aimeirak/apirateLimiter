@@ -11,19 +11,12 @@ client.get = util.promisify(client.get);
 //default structure
 client.set('requests', JSON.stringify({}))
 
-
 client.on("error", function(error) {
     console.error(error);
   });
 
 // requests per second 5
 // requests per month 100
-
-
-
-
-
-
 /**
  * {Ip: 127.0.0.1, req_per_sec: 5, req_per_month: 100}
  */
