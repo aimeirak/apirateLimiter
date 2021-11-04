@@ -2,12 +2,24 @@
 API LATE LIMITER 
 
 API late Limiter service design.
+
 Methods	Endpoints	Actions
-GET	/api/v1/notification	     make notification requests and limit the requests
+
+GET	/api/v1/notification
+why?
+
+make notification requests and limit the requests
+
+
+
 Setup
+
 Install these two tools on your local machine
+
 •	Redis server
 •	Docker
+
+
 Project installation
 •	clone the repo: git clone https://github.com/aimeirak/apirateLimiter.git
 •	switch to project directory : cd apiraleLimiter
@@ -17,13 +29,19 @@ all create docker image by running this command
 docker build . –t rate-limiter-app
 
 install Redis image in docker by running this command
+
 docker pull redis
+
 run in docker using docker compose
+
 docker-compose up
+
 Testing enpoints
+
 Example
 •	I am using Postman to do multiple requests or Insomnia
 - Get: 
+- 
 Request:
 http://localhost:3000/api/v1/notification
  Response: 
