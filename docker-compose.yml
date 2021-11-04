@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  app:
+    build: ./
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+    command:
+      sh -c 'npm i && node server.js'
+  redis:
+    image: redis
+    container_name: cache
+    expose:
+      - 6379
